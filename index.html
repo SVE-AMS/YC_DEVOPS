@@ -1,0 +1,96 @@
+
+<!-- Assessment opdracht 1: probeer de tags uit  -->
+<!Doctype html>
+<html>
+<style>
+	body
+	{
+		background-color: rgba(201, 131, 33, 0.174);
+	}
+	div /*Staat voor division, container element om andere html elementen te structureren.*/
+	{
+		padding: 10px; /* is de afstand tussen de inhoud van in dit geval de tekst en de buitenste rand van de pagina. Heet padding */
+		margin: 10px; /*margin is de afstand tussen verschillende elementen.*/ 
+		border: 2px solid #000;
+	}
+	h1
+	{
+		color:rgba(201, 131, 33, 0.808);
+		background-color:rgb(32, 20, 12);
+	}
+	h2{
+		color: rgba(201, 131, 33, 0.808);
+	}
+	h3{
+		color: rgba(201, 131, 33, 0.808);
+	}
+	p{
+		font-family: 'Times New Roman', Times, serif;
+		font-size: medium;
+		color: rgb(95, 93, 93);
+	}
+</style>
+<head>
+	<Title>Dit is de hoofdtitel van de pagina!</Title> <!--Niet direct zichtbaar, maar ter informatie over de pagina, kan wel zichtbaar zijn in browers tabs-->
+</head>
+<h1>Dit is Header One van de pagina. DevOps Assessment!</h1><!--Dit een kop, gebruikelijk is <h1> t/m <h6>-->
+<br> <!-- dit is een break tussen bijvoorbeeld tekst, je kan het ook in een tekst plaatsen om de tekst achter br te verplaatsen naar volgende regel. -->
+<hr> <!-- horizontale lijn-->
+<hr> <!-- horizontale lijn-->
+<br>
+<div> <!-- div wordt gebruikt voor het groeperen van websecties en voor opmaak-->
+	<h2>Dit is de titel van H2, in dit voorbeeld zal h2 de titels per division zijn</h2>
+	<p>Dit is een introductie paragraaf</p> <!-- dit is een paragraaf-->
+	<b>Dit is een belangrijke zin en is daarom dik gedrukt!</b>
+	<p>Dit is een nieuwe paragraaf waar we een afbeelding toevoegen die ook direct een link is naar een nieuwe pagina</p>
+	<a href="RefnaarPagina.jpg">
+		<img src="VoorbeeldAfbeeldingNaarPagina.jpg" alt="Hmm de afbeelding is niet zichtbaar! Plaats bij src de juiste jpg link!">
+	 </a>
+	 <p>Jammer genoeg blijkt de afbeelding niet geladen te worden! We proberen het gewoon nog een keer!</p>
+	 <a href="RefnaarPagina.jpg">
+		<img src="https://develop-it.nl/wp-content/uploads/2022/11/Samenwerken-1200x800-1.jpg" alt="Hmm de afbeelding is niet zichtbaar! Plaats bij src de juiste jpg link!" width="200" height="150">
+	 </a>
+	 <p>Wat leuk, dit is de afbeelding op de DevOps Assessment pagina!</p>
+	 <p>Waarom heb je eigenlijk interesse in DevOps?</p>
+	 <select name="Reden van interesse"> <!-- met de select tag maken we een dropdown list-->
+		<option value="Leren">Leren</option> <!-- de waarde en wat de gebruiker op de webpagina ziet om te kiezen-->
+		<option value="Salaris">Salaris</option>
+		<option value="Droombaan">Droombaan</option>
+		<option value="Collega's">Collega's</option>
+	  </select>
+    <br>
+	<p>Dit is een nieuwe paragraaf met de link naar de DevOps website: <a href="https://develop-it.nl/yc/devops/">bezoek website</a>.</p> 
+	<p>Dit is nog een nieuwe paragraaf. Dit paraaf wil dat de gebruiker zijn naam invoert.<br>Wat is jouw naam?</p>
+	<input type="text"> <!-- met de input tag kan de gebruiker informatie invoeren, er zijn veel attributes die gebruikt kunnen worden, een ervan is text-->
+	<p>Weet je zeker dat dit je naam is? Klik op de knop als de naam klopt </p>
+	<button onclick="">De naam klopt!</button>
+</div>
+<br>
+<div>
+	<h2> Dit is de tweede header</h2> <!--Dit een kop, gebruikelijk is <h1> t/m <h6>-->
+	<P>Dit is de uitlegtekst voor de list</P>
+	<ul><!-- unodered list, ongeordende list-->
+		<li>Punt 1 in de list</li> <!-- item in list-->
+		<li>Punt 2 in de list</li>
+		<li>Punt 3 in de list</li>
+	</ul>
+</div>
+<br>
+<br>
+<div>
+	<h2> Dit is de tweede header</h2> <!--Dit een kop, gebruikelijk is <h1> t/m <h6>-->
+		<table border="1"> <!-- html tabel-->
+			<p>Dit is de uitlegtekst van de tabel</p>
+			<tr> <!-- tabelrij-->
+				<td>Cel 1</td> <!-- td staat voor table data, data in de cellen van de tabelrij-->
+				<td>Cel 2</td>
+				<td>Cel 3</td>
+			</tr>
+			<tr>
+				<td>Cel 4</td>
+				<td>Cel 5</td>
+				<td>Cel 6</td>
+			</tr>
+		</table>
+</div>
+</html>
